@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+html{
+    font-size: 10px;
+    color: white;
+}
+body{
+    background-color: black;
+    overflow-x:hidden;
+}
+header{
+
+
+}
+section{
+    margin-top:100px;
+}
+.navbar-style{
+    transition: 0.6s;
+    text-transform: uppercase;
+    z-index: 100000;
+}
+nav{
+    flex-direction: row;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+nav ul li a:hover{
+    opacity: .6;
+    font-weight: 500;
+    background-size: 400%;
+    background: linear-gradient(90deg, #ff0000,#ffff00,#ff00f3,#0033ff,#ff00c4,#ff0000);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+nav .sticky{
+    height: 100px;
+    padding: 5px 105px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+}
+.logo{
+    height: 48px;
+    padding:2px 10px;
+    color: white;
+    font-size:30px;
+    font-weight: 250;
+    font-family: 'Kolker Brush', cursive;
+}
+.icon-bar{
+    background-color: white;
+}
+/*Main Header Content Styling*/
+.header_main{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 400px 1fr;
+    margin-left: 100px;
+}
+
+.header_main_content_h1{
+    font-size:70px;
+    background: linear-gradient(90deg, #ff0000,#ffff00,#ff00f3,#0033ff,#ff00c4,#ff0000);
+    background-size: 400%;
+    letter-spacing: 5px;
+    font-width: 600;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+    font-family: 'Abril Fatface', cursive;
+}
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+.header_main_content_p{
+    font-size: 20px;
+    margin-top: 10px;
+    width: 80%;
+    color: white;
+    font-family: 'Khand', sans-serif;
+}
+.header_main_content button{
+    font-size: 25px;
+    padding: 14px 65px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 50px;
+    background-color: #2d3436;
+}
+.cta:hover{
+    opacity: .6;
+    background-size: 400%;
+    background: linear-gradient(90deg, #ff0000,#ffff00,#ff00f3,#0033ff,#ff00c4,#ff0000);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/*============================================*/
